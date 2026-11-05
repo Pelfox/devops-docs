@@ -5,10 +5,10 @@ repo_name: Pelfox/devops-docs
 repo_url: https://github.com/Pelfox/devops-docs
 
 theme:
-	name: mkdocs
-	locale: ru
+  name: mkdocs
+  locale: ru
 
 nav:
-- Главная: index.md
-- Эксплуатация: runbook.md
-- Журнал инцидентов: incidents.md
+  - Главная: index.md
+  - Эксплуатация: runbook.md
+  - Журнал инцидентов: incidents.md
