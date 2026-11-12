@@ -1,0 +1,6 @@
+---
+app_image: "ghcr.io/pelfox/devops-ci-app"
+app_tag: "557c4b77c5a8ecfd9065df103328fb835656d3c5"
+app_container_name: "devops-ci-app"
+app_host_port: 5000
+app_internal_port: 5000
