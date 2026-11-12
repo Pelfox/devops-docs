@@ -1,11 +1,11 @@
-# devops-docs
+# devops-ci-app
 
-Учебный репозиторий практической работы № 9: Pylint, MkDocs, GitHub Actions и
-GitHub Pages.
+Учебное Flask-приложение для практической работы № 10.
 
-- исходники документации: `docs/`;
-- конфигурация MkDocs: `mkdocs.yml`;
-- CI: `.github/workflows/quality.yml`;
-- публикация: `.github/workflows/pages.yml`.
+CI: Pylint → pytest → Docker build → smoke-test → GHCR.
 
-Каталог `site/` является результатом сборки и не хранится в Git.
+Публикация образа выполняется только из `main`. В Pull Request выполняются проверки без push.
+
+- health endpoint: `/health`;
+- образ: `ghcr.io/<login>/devops-ci-app`;
+- основной workflow: `.github/workflows/ci.yml`.
